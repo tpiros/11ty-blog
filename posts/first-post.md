@@ -5,4 +5,4 @@ description: 'This post is about my experience with HTML'
 author: 'Tamas Piros'
 layout: 'layouts/post.hbs'
 ---
-In this post we are going to review some basic HTML elements.
+In this post we are going to review some basic HTML elements :)

@@ -8,5 +8,5 @@ collections:
     folder: 'posts'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'date', name: 'date', widget: 'daetime' }
+      - { label: 'date', name: 'date', widget: 'datetime' }
       - { label: 'body', name: 'body', widget: 'markdown' }

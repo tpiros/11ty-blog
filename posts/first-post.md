@@ -1,11 +1,8 @@
 ---
-title: 'My first post! :)'
+title: 'Getting started with HTML'
 date: 2019-09-06T12:45:00.000Z
+description: 'This post is about my experience with HTML'
+author: 'Tamas Piros'
+layout: 'layouts/post.hbs'
 ---
-# Hello world!
-
-This is my first post, I am super excited :)
-
-
-
-How great is this? :)
+In this post we are going to review some basic HTML elements.

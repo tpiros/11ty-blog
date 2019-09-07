@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {{> layouts/header }}
+</head>
+
+<body>
+  {{> layouts/nav }}
+
+  {{> layouts/page-head }}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          {{{content}}}
+        
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {{> layouts/footer}}
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/clean-blog.min.js"></script>
+  <script>
+    // Copyright
+    const copyright = $('.copyright');
+    copyright.text(`Copyright, Tamas Piros ${new Date().getFullYear()}`);
+  </script>
+</body>
+
+</html>

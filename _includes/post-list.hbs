@@ -1,0 +1,15 @@
+{{#reverseByDate collections.posts}}{{/reverseByDate}}
+{{#each collections.posts }}
+<div class="post-preview">
+  <a href="{{ data.page.url }}">
+    <h2 class="post-title">
+      {{ data.title }}
+    </h2>
+    <h3 class="post-subtitle">
+      {{ data.description }}
+    </h3>
+  </a>
+  <p class="post-meta">Posted by {{ data.author }} on {{formatDate data.date }}</p>
+</div>
+<hr>
+{{/each}}

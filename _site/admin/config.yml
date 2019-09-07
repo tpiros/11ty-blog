@@ -5,7 +5,7 @@ media_folder: 'assets/uploads'
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: '_post'
+    folder: 'posts'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'date', name: 'date', widget: 'daetime' }

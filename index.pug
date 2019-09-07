@@ -1,0 +1,5 @@
+extends layout
+block content
+  ul
+  each post in collections.posts
+    li= post.data.title

@@ -1,0 +1,12 @@
+backend:
+   name: git-gateway
+
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_post'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'date', name: 'date', widget: 'daetime' }
+      - { label: 'body', name: 'body', widget: 'markdown' }

@@ -6,6 +6,7 @@ media_library:
   config:
     cloud_name: tamas-demo
     api_key: 212496679715456
+    output_filename_only: true
     default_transformations:
       - fetch_format: auto
         width: 400

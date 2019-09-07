@@ -1,7 +1,16 @@
 backend:
    name: git-gateway
 
-media_folder: 'assets/uploads'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: tamas-demo
+    api_key: 212496679715456
+    default_transformations:
+      - fetch_format: auto
+        width: 400
+        quality: auto
+        crop: scale
 collections:
   - name: 'blog'
     label: 'Blog'

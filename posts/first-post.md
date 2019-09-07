@@ -1,8 +1,7 @@
 ---
-title: 'Getting started with HTML'
+title: Getting started with HTML
 date: 2019-09-06T12:45:00.000Z
-description: 'This post is about my experience with HTML'
-author: 'Tamas Piros'
-layout: 'layouts/post.hbs'
 ---
+![](/assets/uploads/img_20190906_211318.jpg)
+
 In this post we are going to review some basic HTML elements.

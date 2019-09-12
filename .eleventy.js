@@ -17,19 +17,5 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.hbs');
-
-  return {
-    pathPrefix: '/',
-    markdownTemplatEngine: 'liquid',
-    htmlTemplateEngine: 'hbs',
-    dataTemplateEngine: 'hbs',
-    passthroughFileCopy: true,
-    dir: {
-      input: '.',
-      includes: '_includes',
-      output: '_site'
-    }
-  };
-
   
 };

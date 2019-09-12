@@ -1,7 +1,13 @@
 ---
 layout: layouts/base.hbs
 ---
-<p class="post-meta">Posted by {{ author }} on {{formatDate date }}
-  <hr>
+<p class="post-meta">Posted by <span style="background-image: url('https://res.cloudinary.com/tamas/image/upload/f_auto,q_auto,w_26,h_26,c_thumb,g_face/v1568271400/tamas.jpg');"></span> {{ author }} on {{formatDate date }}.</p>
+<hr>
 {{{ content }}}
+<hr>
+<div style="text-align: center;">
+  {{> author}}
+</div>
+
+<hr>
 <p><a href="{{ url '/' }}">← Home</a></p>

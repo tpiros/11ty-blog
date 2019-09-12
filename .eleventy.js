@@ -6,8 +6,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('admin');
 
   eleventyConfig.addHandlebarsHelper('formatDate', value => {
+    const ISOcode = 'en-GB';
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const d = new Date(value);
-    return `${d.toLocaleDateString()}`;
+    return `${d.toLocaleDateString(ISOcode, options)}`;
   });
 
   eleventyConfig.addHandlebarsHelper('reverseByDate', data => {

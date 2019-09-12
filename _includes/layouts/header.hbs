@@ -3,7 +3,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>{{ blogTitle }} - {{ title }}</title>
+{{#if title}}
+<title>{{ title }} | {{ blogTitle }}</title>
+{{else}}
+<title>{{ blogTitle }}</title>
+{{/if}}
 
 <!-- Bootstrap core CSS -->
 <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

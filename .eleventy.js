@@ -18,6 +18,15 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addHandlebarsHelper('eq', (a, b, opts) => {
+    if (a === b) {
+      return opts.fn(this);
+    }
+    else {
+      return opts.inverse(this);
+    }
+  });
+
   eleventyConfig.addLayoutAlias('post', 'layouts/post.hbs');
   
 };

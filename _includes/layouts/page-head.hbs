@@ -1,3 +1,14 @@
+{{#eq page.fileSlug ''}}
+<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
+{{/eq}}
+{{#eq page.fileSlug 'about' }}
+<header class="masthead" style="background-image: url('/img/about-bg.jpg')">
+{{/eq}}
+{{#eq page.fileSlug 'contact' }}
+<header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
+{{/eq}}
+
+
 {{#if author }}
 <header class="masthead" style="background-image: url('/img/home-bg.jpg')">
   <div class="overlay"></div>
@@ -12,7 +23,6 @@
   </div>
 </header>
 {{else}}
-<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">

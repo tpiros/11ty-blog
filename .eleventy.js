@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('js');
   eleventyConfig.addPassthroughCopy('vendor');
   eleventyConfig.addPassthroughCopy('admin');
-
+  // {{ formatDate dateValue }} --> {{ formatDate "2019-09-24" }}
   eleventyConfig.addHandlebarsHelper('formatDate', value => {
     const ISOcode = 'en-GB';
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

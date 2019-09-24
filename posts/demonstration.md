@@ -9,7 +9,7 @@ layout: 'layouts/post.hbs'
 Hello this is an intro
 
 ## Subsection
-....
+.... ....
 > quote
 
 * item 1
